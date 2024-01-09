@@ -2,8 +2,8 @@ import { Schema,Document, models, model } from "mongoose";
 
 
 export interface ICategory extends Document{
-  _id: String;
-  name: String;
+  _id: string;
+  name: string;
 }
 const CategorySchema = new Schema({
   name:{type: String, require: true, unique: true}
